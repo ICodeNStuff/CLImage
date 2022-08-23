@@ -1,4 +1,4 @@
-# CLImage
+# CLImage improved. I accidentally named it this, because I didnt know this existed. 
 Give the program an image by command line and the program will print the colored image in the terminal (using ascii). Supports almost all terminals.
 
 # Use with:
