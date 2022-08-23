@@ -8,6 +8,11 @@ try:
     char = str(sys.argv[2])
 except:
     pass
-converter.convert(filename, 4)
+quality_multiplier = 4
+try:
+    quality_multiplier = str(sys.argv[3])
+except:
+    pass
+converter.convert(filename, quality_multiplier)
 pixel_arr = assign_form.assign_form("sta_" + filename)
 display.display(pixel_arr, char)
