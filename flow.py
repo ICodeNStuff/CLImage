@@ -1,6 +1,7 @@
 import assign_form
 import converter
 import display
+import os
 import sys
 filename = str(sys.argv[1])
 char = 'X'
@@ -16,3 +17,4 @@ except:
 converter.convert(filename, quality_multiplier)
 pixel_arr = assign_form.assign_form("sta_" + filename)
 display.display(pixel_arr, char)
+os.remove("sta_" + filename)
