@@ -10,7 +10,7 @@ except:
     pass
 quality_multiplier = 4
 try:
-    quality_multiplier = str(sys.argv[3])
+    quality_multiplier = int(sys.argv[3])
 except:
     pass
 converter.convert(filename, quality_multiplier)
